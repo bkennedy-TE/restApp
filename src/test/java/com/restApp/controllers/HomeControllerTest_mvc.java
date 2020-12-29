@@ -23,10 +23,12 @@ public class HomeControllerTest_mvc {
 	@Autowired
 	WebApplicationContext wac;
 	
-	
+
 	@Test
 	public void shouldExposeRootEndpoint_GET() {
 		try {
+			
+			
 			this.mockMvc.perform(
 					MockMvcRequestBuilders.get("/")
 			).andDo(MockMvcResultHandlers.print())
